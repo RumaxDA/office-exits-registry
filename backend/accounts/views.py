@@ -13,3 +13,4 @@ class UserViewSet(ModelViewSet):
         if user.is_staff:
             return User.objects.all().order_by("id")
         return User.objects.filter(id=user.id)
+
